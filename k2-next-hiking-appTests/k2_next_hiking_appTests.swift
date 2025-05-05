@@ -1,10 +1,3 @@
-//
-//  k2_next_hiking_appTests.swift
-//  k2-next-hiking-appTests
-//
-//  Created by Oleksandr Rolik on 06.05.2025.
-//
-
 import Testing
 @testable import k2_next_hiking_app
 

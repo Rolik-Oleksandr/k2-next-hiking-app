@@ -1,10 +1,3 @@
-//
-//  k2_next_hiking_appUITests.swift
-//  k2-next-hiking-appUITests
-//
-//  Created by Oleksandr Rolik on 06.05.2025.
-//
-
 import XCTest
 
 final class k2_next_hiking_appUITests: XCTestCase {

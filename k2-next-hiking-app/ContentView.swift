@@ -1,19 +1,12 @@
-//
-//  ContentView.swift
-//  k2-next-hiking-app
-//
-//  Created by Oleksandr Rolik on 06.05.2025.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "info.circle")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("k2-next")
         }
         .padding()
     }
