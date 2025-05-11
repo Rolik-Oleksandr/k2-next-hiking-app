@@ -55,14 +55,15 @@ struct TabBarItem: View {
                     .degrees(isRotating && isSelected ? 180 : 0),
                     axis: (x: 0, y: 1, z: 0)
                 )
-                .animation(isRotating ?
-                    .easeInOut(duration: 0.5) :
-                        .spring(response: 0.3, dampingFraction: 0.4), value: isTapped)
+                .animation(.spring(response: 0.3, dampingFraction: 0.4), value: isTapped)
+                .animation(.easeInOut(duration: 0.5), value: isSelected)
             
             Text(label)
         }
         .onTapGesture {
-            isTapped = true
+            withAnimation(.spring(response: 0.3, dampingFraction: 0.4)) {
+                isTapped = true
+            }
             action()
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {
                 isTapped = false
