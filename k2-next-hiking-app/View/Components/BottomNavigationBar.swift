@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct BottomNavigationBar: View {
-    @State private var selectedView = "home-view"
+    @State var selectedView: String = "home-view"
     
     var body: some View {
         HStack(spacing: 50) {
@@ -48,7 +48,7 @@ struct TabBarItem: View {
         VStack {
             Image(systemName: icon)
                 .resizable()
-                .frame(width: 25, height: 22)
+                .frame(width: 22, height: 22)
                 .padding(.bottom, 0)
                 .scaleEffect(isTapped ? 1.3 : 1.0)
                 .rotation3DEffect(
